@@ -3,9 +3,9 @@ package it.polito.tdp.metroparis.model;
 public class Connessione {
 
 	private int idConnessione;
-	private Linea linea;
-	private Fermata stazP;
-	private Fermata stazA;
+	private Linea linea; //paradigma ORM--> prendo direttamente oggetto e non i campi
+	private Fermata stazP; //ORM
+	private Fermata stazA; //ORM (--> collegamenti nel DAO)
 
 	public Connessione(int idConnessione, Linea linea, Fermata stazP, Fermata stazA) {
 		this.idConnessione = idConnessione;
