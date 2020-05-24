@@ -129,6 +129,7 @@ public class MetroDAO {
 		return result;
 	}
 
+	//query per metodo 3
 	public List<CoppiaFermate> coppieFermate(Map<Integer, Fermata> fermateIdMap) {
 		String sql ="SELECT DISTINCT id_stazP, id_stazA " + 
 					"FROM connessione";
